@@ -9,24 +9,30 @@ public class Calculator
     // - Div
     // - Mul
     // - Faculty - Recursive faculty calculation
-    public int Faculty(int nbr1)
-    {
-        throw new NotImplementedException();
-    }
+
     public int Add(int nbr1,int nbr2)
     {
-        throw new NotImplementedException();
+        return nbr1 + nbr2; 
     }
     public int Sub(int nbr1,int nbr2)
     {
-        throw new NotImplementedException();
+        return nbr1 - nbr2;
     }
     public int Mul(int nbr1,int nbr2)
     {
-        throw new NotImplementedException();
+        return nbr1 * nbr2;     
     }
     public int Div(int nbr1,int nbr2)
     {
-        throw new NotImplementedException();
+        return nbr1 / nbr2;
+    }
+
+    public int Faculty(int nbr1)
+    {
+        if(nbr1 ==1)
+        {
+            return 1;
+        }
+        return nbr1 * Faculty(nbr1 - 1);
     }
 }
