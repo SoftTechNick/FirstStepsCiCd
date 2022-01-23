@@ -24,7 +24,7 @@ public class CalculatorTest
     }
     
     [Theory]
-    [InlineData(1,2,3)]
+    [InlineData(3,2,1)]
     public void Calculator_TestSubMethod(int nbr1, int nbr2, int expected)
     {
         //Arrange
@@ -38,7 +38,7 @@ public class CalculatorTest
     }
     
     [Theory]
-    [InlineData(1,2,3)]
+    [InlineData(10,5,2)]
     public void Calculator_TestDivMethod(int nbr1, int nbr2, int expected)
     {
         //Arrange
@@ -52,7 +52,7 @@ public class CalculatorTest
     }
     
     [Theory]
-    [InlineData(1,2,3)]
+    [InlineData(11,3,33)]
     public void Calculator_TestMulMethod(int nbr1, int nbr2, int expected)
     {
         //Arrange
@@ -66,7 +66,7 @@ public class CalculatorTest
     }
     
     [Theory]
-    [InlineData(1,2)]
+    [InlineData(3,6)]
     public void Calculator_TestFacultyMethod(int nbr1, int expected)
     {
         //Arrange
